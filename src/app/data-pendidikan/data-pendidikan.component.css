@@ -1,0 +1,11 @@
+.container-fluid{
+    background-color: #DDFAB7;
+}
+
+#tengah { 
+    height:100px; 
+    padding:10px;
+    background-color:#CCCCCC;
+    margin:10px 290px 0 290px; 
+}
+

@@ -1,0 +1,86 @@
+<div class="container-fluid mt-2">
+    <div class="container">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="../../assets/img/Logo Universital Tanpa Background 3149 x 130.png" alt="Logo" width="149" height="130" class="d-inline-block align-text-top">
+              <u>UNIVERSITAS SEVENTH</u>
+              <a>PMB - Online</a>
+            </a>
+          </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#"><img src="../../assets/img/person-circle.png"> Nama User</a>
+              <a class="nav-link active" aria-current="page" href="#"><img src="../../assets/img/download.png"> Download</a>
+              <a class="nav-link" [routerLink]="['/','login']">Logout <img src="../../assets/img/box-arrow-right.png"></a>
+              <a class="nav-link" [routerLink]="['/','home']"><img src="../../assets/img/house-door-fill.png"></a>
+            </div>
+          </div>
+        </nav>
+        <hr size="10" color="black">
+    </div>
+
+    <div class="container mt-2">
+        <br>
+        <p><img src="../../assets/img/person-fill.svg" alt=""> Profil Peserta</p>
+        <hr>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-9">
+                    <table class="table">
+                        <tbody>
+                        <tr>
+                            <td>Nomor Peserta :</td>
+                        </tr>
+                        <tr>
+                            <td>Nama :</td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Lahir :</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir :</td>
+                        </tr>
+                        <tr>
+                            <td>Agama :</td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin :</td>
+                        </tr>
+                        <tr>
+                            <td>Alamat :</td>
+                        </tr>
+                        <tr>
+                            <td>NISN :</td>
+                        </tr>
+                        <tr>
+                            <td>Pilihan Prodi :</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                  <div class="container">
+                      <div class="col-4">
+                        <div class="ratio ratio-16x9 text-center">
+                            <div><iframe src="" title="" allowfullscreen></iframe><b>FOTO</b></div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+          <br>
+          <br>
+          <div class="d-grid gap-2 d-md-flex">
+            <button class="btn btn-light" type="button" [routerLink]="['/','data-pendidikan']">Kembali</button>
+            <button class="btn btn-light" type="button" [routerLink]="['/','data-pribadi']">Edit data Pokok</button>
+          </div>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-light me-md-2" type="button">Cetak</button>
+            <button class="btn btn-light" type="button">Download</button>
+          </div>
+    </div>
+    <br>
+    <br>
+</div>

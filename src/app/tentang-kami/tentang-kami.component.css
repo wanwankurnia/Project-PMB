@@ -1,0 +1,49 @@
+.container-fluid{
+    text-align: center;
+    color: black;
+    background-color: #DDFAB7;
+}
+
+h2{
+    /* font-family: 'Inter'; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 130%;
+}
+
+h4 {
+/* font-family: 'Inter'; */
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 140%;
+text-align: center;
+letter-spacing: 0.005em;
+}
+
+img {
+position:static;
+width: 371px;
+height: 403px;
+left: 571px;
+top: 296px;
+}
+
+hr{
+    color: black;
+}
+.container span img{
+    width: 24px;
+    height: 24px;
+    text-align: left;
+}
+
+.container{
+    text-align: left;
+}
+
+.footer-responsive img{
+    width: 24px;
+    height: 24px;
+}

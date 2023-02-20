@@ -1,0 +1,46 @@
+<div class="container-fluid mt-2">
+    <div class="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../../assets/img/Logo Universital Tanpa Background 3149 x 130.png" alt="Logo" width="149" height="130" class="d-inline-block align-text-top">
+            <u>UNIVERSITAS SEVENTH</u>
+            <a>PMB - Online</a>
+          </a>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#"><img src="../../assets/img/person-circle.png"> Nama User</a>
+            <a class="nav-link" [routerLink]="['/','login']">Logout <img src="../../assets/img/box-arrow-right.png"></a>
+            <a class="nav-link" [routerLink]="['/','home']"><img src="../../assets/img/house-door-fill.png"></a>
+          </div>
+        </div>
+      </nav>
+      <hr size="10" color="black">
+    </div>
+    
+    <div class="container-fluid mt-2">
+      <table border='0' width='60%' cellpadding='2'  cellspacing='2' align='center'><tr><br></tr>
+          <tr><td><b>NISN</b></td><td><input type="file" name="NISN" size="40" maxlength="50"/></td></tr>
+          <tr><td><b>Foto</b></td><td><input type="file" name="foto" size="40" maxlength="50"/></td></tr>
+          <tr><td><b>Kartu Keluarga</b></td><td><input type="file" name="kk" size="40" maxlength="50"/></td></tr>
+          <tr><td><b>Ijazah</b></td><td><input type="file" name="ijazah" size="40" maxlength="50"/></td></tr>
+          <tr><td><b>SKHUN</b></td><td><input type="file" name="skhun" size="40" maxlength="50"/></td></tr>
+          <tr><td><b>Raport Semester</b></td><td><input type="file" name="rs" size="40" maxlength="50"/></td></tr>
+          <tr><td><b>Keterangan Sehat</b></td><td><input type="file" name="ks" size="40" maxlength="50"/></td></tr>
+          <tr><td><b>Foto</b></td><td><input type="file" name="foto" size="40" maxlength="50"/></td></tr>
+          <tr><td><b>Lampiran</b></td><td><input type="file" name="Lampiran" size="40" maxlength="50"/></td></tr>
+          
+      </table>
+      <br><br>
+  </div>
+  
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button class="btn btn-light me-md-2" type="button" [routerLink]="['/','data-pribadi']">Sebelumnya</button>
+      <button class="btn btn-light" type="button" [routerLink]="['/','data-pendidikan']"> Selanjutnya </button>
+  </div>
+  <br>
+  <br>
+  </div>

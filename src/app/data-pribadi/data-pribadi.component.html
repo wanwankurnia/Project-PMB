@@ -1,0 +1,141 @@
+<div class="container-fluid mt-2">
+    <div class="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../../assets/img/Logo Universital Tanpa Background 3149 x 130.png" alt="Logo" width="149" height="130" class="d-inline-block align-text-top">
+            <u>UNIVERSITAS SEVENTH</u>
+            <a>PMB - Online</a>
+          </a>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#"><img src="../../assets/img/person-circle.png"> Nama User</a>
+            <a class="nav-link" [routerLink]="['/','login']">Logout <img src="../../assets/img/box-arrow-right.png"></a>
+            <a class="nav-link" [routerLink]="['/','home']"><img src="../../assets/img/house-door-fill.png"></a>
+          </div>
+        </div>
+      </nav>
+      <hr size="10" color="black">
+    </div>
+    
+    <div class="container-fluid d-flex justify-content-center mt-2">
+        <!-- Judul -->
+        <div class="card mt-3 rounded-0" style="width: 1000px;">
+            <div class="card-header">
+                <h5>Data Pribadi</h5>
+            </div>
+    
+            <!-- Isian -->
+            <div class="card-body bg-transparent">
+                <!-- Baris Pertama -->
+                <div class="row my-3">
+                        <label class="col-2">Nama Lengkap</label>
+                        <div class="col-10">
+                            <input type="text" class="form-control">
+                        </div>
+                </div>
+    
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-4">Tanggal Lahir</label>
+                            <div class="col-8">
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Baris Kecamatan -->
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-4">Tempat Lahir</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-4">Agama</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-4">Jenis Kelamin</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row my-3">
+                        <label class="col-2">Alamat Lengkap</label>
+                        <div class="col-10">
+                            <input type="text" class="form-control">
+                        </div>
+                </div>
+                <!-- Baris Kelurahan -->
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-4">No Telepon</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Baris Kelurahan -->
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-4">Hobi</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-4">Cita Cita</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-6">
+                        <div class="row">
+                            <label class="col-4">Motivasi</label>
+                            <div class="col-8">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+    
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button class="btn btn-light me-md-2" type="button" [routerLink]="['/','data-calon-mhs']">Sebelumnya</button>
+                <button class="btn btn-light" type="button" [routerLink]="['/','selanjutnya1']">Selanjutnya</button>
+                <br>
+                <br>
+            </div>
+    
+  </div>
+

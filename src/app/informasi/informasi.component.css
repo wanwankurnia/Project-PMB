@@ -1,0 +1,13 @@
+.container {
+    background: #DDFAB7;
+}
+
+.container-fluid {
+    background-color: #DDFAB7;
+}
+
+.container h3{
+    text-align: center;
+    margin-top: 3px;
+}
+
