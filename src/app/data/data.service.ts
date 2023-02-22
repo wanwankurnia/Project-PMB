@@ -22,7 +22,7 @@ export class dataSevice {
     }
 
     datapribadi() {
-        return this.http.get<DataPribadi[]>(`${environment.baseUrl}data-peibadi`)
+        return this.http.get<DataPribadi[]>(`${environment.baseUrl}data-pribadi`)
     }
 
     datapendidikan() {

@@ -20,13 +20,14 @@ export class LoginComponent implements OnInit {
   onSubmit(formValue: { username: string; password: string; }){
     this.authservice.login(formValue.username,formValue.password).subscribe(
       (result) => {
-       console.log('login success', this.onSubmit)
-       alert('Login Berhasil')
-       this.route.navigate(['/data-calon-mhs'])
+       console.log('login success', this.onSubmit);
+       alert('Login Berhasil');
+      //  this.route.navigate(['./data-calon-mhs']);
       },
       (error) => {
       console.log('Login failed:', error);
       alert('Login Berhasil');
+      this.route.navigate(['./data-calon-mhs']);
       }
     )
   }
