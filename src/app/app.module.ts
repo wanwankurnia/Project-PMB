@@ -58,4 +58,4 @@ import { InterceptorkuInterceptor } from './interceptorku.interceptor';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

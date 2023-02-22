@@ -17,3 +17,8 @@ export class registrasi {
     konfirmasi_password: string ="";
 }
 
+export class LupaPassword {
+    alamat_email : string="";
+    buat_password_baru : string="";
+    konfirmasi_password_baru : string="";
+}

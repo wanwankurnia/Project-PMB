@@ -8,3 +8,12 @@ import { Component } from '@angular/core';
 export class ProfilPesertaComponent {
 
 }
+
+// $(document).ready(function(){
+//   $(`#profil-peserta`).ProfilPeserta({
+//     dom: 'Bfrtip',
+//     buttons : [
+//       'cetak'
+//     ]
+//   });
+// });

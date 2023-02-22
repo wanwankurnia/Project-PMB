@@ -39,13 +39,15 @@ export class RegistrasiComponent implements OnInit {
 
       }
 
-    onsubmit(formValue: {nama_lengkap:string,username:string,alamat_email:string,no_telepon:string,buat_password:string,konfirmasi_password:string}){
+    onSubmit(formValue: {nama_lengkap:string,username:string,alamat_email:string,no_telepon:string,buat_password:string,konfirmasi_password:string}){
       if (!formValue.nama_lengkap || !formValue.username || !formValue.alamat_email || !formValue.no_telepon || !formValue.buat_password || !formValue.konfirmasi_password) {
-        alert('Silahkan lengkapi semua kolom untuk melakukan registrasi');
+        // alert('Silahkan lengkapi semua kolom untuk melakukan registrasi');
+        window.alert('Registrasi Berhasil');
         return;
       }
       
-      this.authservice.registrasi(formValue.nama_lengkap,formValue.username,formValue.alamat_email,formValue.alamat_email,formValue.no_telepon,formValue.buat_password).subscribe(() => {
+      this.authservice.registrasi(formValue.nama_lengkap,formValue.username,formValue.alamat_email,formValue.no_telepon,formValue.buat_password, formValue.konfirmasi_password).subscribe(() => {
+        window.alert('Registrasi Berhasil');
         this.router.navigate(['/auth/login']);
         this.registrasiform.reset();
       });

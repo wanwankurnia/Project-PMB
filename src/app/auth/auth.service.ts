@@ -31,7 +31,7 @@ export class AuthService {
   }
 
   logout():Observable<any>{
-    return this.http.post(`${auth_API}logout`,{}, httpOptions)
+    return this.http.delete(`${auth_API}logout`,{})
     .pipe (
       catchError(error => {
         console.log(error);
@@ -49,6 +49,10 @@ export class AuthService {
 
   removetoken():void{
     this.cookieservice.delete('token')
+  }
+
+  lupapassword(alamat_email: string, buat_password_baru: string, konfirmasi_password_baru: string) {
+    return this.http.put(`${auth_API}lupapassword`,{alamat_email,buat_password_baru,konfirmasi_password_baru}, httpOptions)
   }
 
 }

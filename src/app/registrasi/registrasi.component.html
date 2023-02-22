@@ -12,27 +12,27 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Nama Lengkap</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your name" ngModel required>
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" placeholder="Enter your username" ngModel required>
           </div>
           <div class="input-box">
             <span class="details">Alamat Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your email"ngModel required>
           </div>
           <div class="input-box">
             <span class="details">No. Telepon</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" ngModel required>
           </div>
           <div class="input-box">
             <span class="details">Buat Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="password" placeholder="Enter your password" id="password" ngModel required>
           </div>
           <div class="input-box">
             <span class="details">Konfirmasi Password</span>
-            <input type="text" placeholder="Confirm your password" required>
+            <input type="password" placeholder="Confirm your password" id="password" ngModel required>
           </div>
         </div>
         <!-- <div class="gender-details">
@@ -56,7 +56,7 @@
           </div>
         </div> -->
         <div class="button">
-          <input type="submit" value="Register" (click)="onsubmit(registrasiform.value)">
+          <input type="submit" value="Register" (click)="onSubmit(registrasiform.value)" [routerLink]="['/','login']">
         </div>
       </form>
     </div>

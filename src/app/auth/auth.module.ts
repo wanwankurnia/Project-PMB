@@ -9,7 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [ LoginComponent, RegistrasiComponent, LupaPasswordComponent],
+  declarations: [],
   imports: [
     CommonModule,
     AuthRoutingModule,

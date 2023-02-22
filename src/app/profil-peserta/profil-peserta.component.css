@@ -11,3 +11,10 @@
     
     border: 3px solid #000000;
 }
+.ratio img{
+    position: absolute;
+    width: 286px;
+    height: 384px;
+    left: 0px;
+    top: 0px;
+}
