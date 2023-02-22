@@ -44,3 +44,13 @@ export class ProfilPeserta {
     nisn : string="";
     pilihan_prodi : string="";
 }
+
+export class selanjutnya1 {
+    foto : string="";
+    kartu_keluarga : string="";
+    ijazah : string="";
+    skhun : string="";
+    raport_semester : string="";
+    keterangan_sehat : string="";
+    lampiran : string="";
+}

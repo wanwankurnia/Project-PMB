@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { environment } from "environments/environment";
-import { DataCalonMhs, DataPendidikan, DataPribadi } from "./data.model";
+import { DataCalonMhs, DataPendidikan, DataPribadi, selanjutnya1 } from "./data.model";
 
 const data_API="http://127.0.0.1:8000";
 
@@ -27,5 +27,8 @@ export class dataSevice {
 
     datapendidikan() {
         return this.http.get<DataPendidikan[]>(`${environment.baseUrl}data-pendidikan`)
+    }
+    selanjutnya1() {
+        return this.http.get<selanjutnya1[]>(`${environment.baseUrl}selanjutnya1`)
     }
 }
