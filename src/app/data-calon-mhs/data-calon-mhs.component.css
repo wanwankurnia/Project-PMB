@@ -5,3 +5,8 @@
 .container-fluid {
     background-color: #DDFAB7;
 }
+
+.form-control{
+    text-align: center;
+    justify-content: center;
+}
