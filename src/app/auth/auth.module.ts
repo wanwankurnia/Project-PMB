@@ -2,13 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AuthRoutingModule } from './auth-routing.module';
+import { LoginComponent } from '../login/login.component';
+import { RegistrasiComponent } from '../registrasi/registrasi.component';
+import { LupaPasswordComponent } from '../lupa-password/lupa-password.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ LoginComponent, RegistrasiComponent, LupaPasswordComponent],
   imports: [
     CommonModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class AuthModule { }

@@ -3,9 +3,9 @@ const PROXY_CONFIG = [
       context:[
         "/api"
       ],
-      target: "http://localhost:1000/",
+      target: "localhost:1000",
       pathRewrite : {
-      "^/api" : " "
+      "^/api" : ""
       },
       changeOrigin : true,
       secure : false

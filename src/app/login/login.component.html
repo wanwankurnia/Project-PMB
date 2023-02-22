@@ -40,7 +40,7 @@
 				<input type="password" placeholder="Masukan Password Anda"  id="password" ngModel required/>
 			</div>
 			<div>
-				<input type="submit" value="Log in" (click)="onSubmit(loginform.value)"> 
+				<input type="submit" value="Log in" (click)="onSubmit(loginform.value)" [routerLink]="['/','data-calon-mhs']"> 
 				<a [routerLink]="['/','lupa-password']" class="justify-content-left"> << Lupa password</a>
 				<a [routerLink]="['/','registrasi']">Register >></a>
 			</div>
